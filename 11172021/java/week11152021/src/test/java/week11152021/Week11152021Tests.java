@@ -16,12 +16,15 @@ public class Week11152021Tests {
 		int[][] arr1 = Week11152021.squarePatch(0);
 		int[][] arr2 = Week11152021.squarePatch(3);
 		int[][] arr3 = Week11152021.squarePatch(5);
+		int[][] arr4 = Week11152021.squarePatch(1);
 		int[][] arr1Exp = {{}};
 		int[][] arr2Exp = {{3,3,3},{3,3,3},{3,3,3}};
 		int[][] arr3Exp = {{5,5,5,5,5},{5,5,5,5,5},{5,5,5,5,5},{5,5,5,5,5},{5,5,5,5,5}};
+		int[][] arr4Exp = {{1}};
 		assertArrayEquals(arr1,arr1Exp);
 		assertArrayEquals(arr2,arr2Exp);
 		assertArrayEquals(arr3,arr3Exp);
+		assertArrayEquals(arr4,arr4Exp);
 	}
 
 	@Test
@@ -31,5 +34,6 @@ public class Week11152021Tests {
 		assertFalse(Week11152021.ascending("420911"));
 		assertTrue(Week11152021.ascending("444445"));
 		assertTrue(Week11152021.ascending("133713381339"));
+		assertTrue(Week11152021.ascending("9899100101"));
 	}
 }
