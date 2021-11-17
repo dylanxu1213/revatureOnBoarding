@@ -1,0 +1,80 @@
+JavaScript:
+
+1) Write two functions:
+
+- One to retrieve all unique substrings that start and end with a vowel.
+- One to retrieve all unique substrings that start and end with a consonant.
+The resulting array should be sorted in lexicographic ascending order (same order as a dictionary).
+
+Examples:
+getVowelSubstrings("apple")
+--> ["a", "apple", "e"]
+
+getVowelSubstrings("hmm") --> []
+
+getConsonantSubstrings("aviation")
+--> ["n", "t", "tion", "v", "viat", "viation"]
+
+getConsonantSubstrings("motor")
+-->["m", "mot", "motor", "r", "t", "tor"]
+
+Notes:
+- Remember the output array should have unique values.
+- The word itself counts as a potential substring.
+- Exclude the empty string when outputting the array.
+
+2) Write a function redundant that takes in a string 'str' and returns a function that returns 'str'.
+
+Examples
+const f1 = redundant("apple")
+f1() --> "apple"
+
+const f2 = redundant("pear")
+f2() --> "pear"
+
+const f3 = redundant("")
+f3() -->""
+
+Notes:
+Your function should return a 'function', not a string.
+
+Java:
+1) Write a function that returns true if a string consists of ascending or ascending AND consecutive numbers.
+
+Examples
+ascending("232425") --> true
+// Consecutive numbers 23, 24, 25
+
+ascending("2324256") --> false
+// No matter how this string is divided, the numbers are not consecutive.
+
+ascending("444445") --> true
+// Consecutive numbers 444 and 445.
+Notes
+A number can consist of any number of digits, so long as the numbers are adjacent to each other, and the string has at least two of them.
+
+2) Create a function that takes an integer and outputs an n x n square solely consisting of the integer n.
+
+Examples
+squarePatch(3) --> [
+[3, 3, 3],
+[3, 3, 3],
+[3, 3, 3]
+]
+
+squarePatch(5) --> [
+[5, 5, 5, 5, 5],
+[5, 5, 5, 5, 5],
+[5, 5, 5, 5, 5],
+[5, 5, 5, 5, 5],
+[5, 5, 5, 5, 5]
+]
+
+squarePatch(1) --> [
+[1]
+]
+
+squarePatch(0) --> []
+Notes
+n >= 0.
+If n = 0, return an empty array.
